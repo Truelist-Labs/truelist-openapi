@@ -34,3 +34,11 @@ echo "=== GET /me ==="
 curl -s -X GET "${BASE_URL}/me" \
   -H "Authorization: Bearer ${API_KEY}" | python3 -m json.tool
 echo
+
+# ---------------------------------------------------------------------------
+# 4. Credit balance (free, does not spend credits)
+# ---------------------------------------------------------------------------
+echo "=== GET /api/v1/credits ==="
+curl -s -X GET "${BASE_URL}/api/v1/credits" \
+  -H "Authorization: Bearer ${API_KEY}" | python3 -m json.tool
+echo

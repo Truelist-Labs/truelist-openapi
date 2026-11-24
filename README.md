@@ -20,6 +20,7 @@ This repository contains the OpenAPI 3.1 specification that describes every endp
 | `POST` | `/api/v1/verify_inline?email={email}` | Inline email validation (single, synchronous) |
 | `POST` | `/api/v1/verify` | Batch email verification (list upload, async) |
 | `GET`  | `/me` | Account info, API keys, and plan details |
+| `GET`  | `/api/v1/credits` | Credits left to spend (free, read-only) |
 
 ## Authentication
 
